@@ -1,38 +1,146 @@
-.App {
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.counter {
+  margin-top: 5px;
+  color: #6c757d; /* Gray color */
+  font-size: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-container {
+  margin-bottom: 20px; /* Add margin to the bottom */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type="text"] {
+  width: calc(100% - 80px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+  margin-bottom: 10px; /* Add margin to the bottom */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.warning {
+  color: red;
+  margin-top: 10px;
+}
+
+.name-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.column {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.column ul li {
+  padding: 5px 0;
+}
+
+.teams {
+  display: flex;
+  flex-wrap: wrap; /* Allow teams to wrap onto new lines */
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.team {
+  flex: 0 0 calc(20% - 20px); /* Set the maximum width for each team */
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px; /* Add margin between teams */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team h2 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.team ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.team ul li {
+  display: flex;
+  padding: 5px 0;
+  flex-direction: column-reverse;
+}
+
+.lockButton {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+  margin-bottom: 10px; /* Add margin to the bottom */
+  background-color: #c82333; 
+}
+
+.refreshButton {
+  padding: 10px 20px;
+  background-color: #dc3545; /* Red color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.refreshButton:hover {
+  background-color: #c82333; /* Darker red color */
+}
+
+.player-container {
+  position: relative;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  visibility: hidden; /* Initially hide the icon */
+}
+
+.player-container:hover .delete-icon {
+  visibility: visible; /* Show the icon when hovering over the player container */
+}
+
+.delete-icon:hover {
+  color: red; /* Change color when hovered over */
 }

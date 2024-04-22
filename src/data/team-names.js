@@ -1,0 +1,23 @@
+export const teamNames = [
+    'Sonics',
+    'Bulls',
+    'Lakers',
+    'Warriors',
+    'Celtics',
+    'Rockets',
+    'Heat',
+    'Spurs',
+    'Knicks',
+    'Spurs',
+    'Clippers',
+    'Thunder',
+    'Mavericks',
+    'Blazers',
+    'Pacers',
+    'Raptors',
+    'Grizzlies',
+    'Nuggets',
+    'Magic',
+    'Pelicans',
+    'Hornets'
+];
