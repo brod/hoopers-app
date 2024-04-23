@@ -67,16 +67,16 @@ button:hover {
 
 .teams {
   display: flex;
-  flex-wrap: wrap; /* Allow teams to wrap onto new lines */
-  justify-content: space-between;
+  flex-wrap: wrap; 
+  justify-content: flex-start;
   margin-top: 20px;
 }
 
 .team {
-  flex: 0 0 calc(20% - 20px); /* Set the maximum width for each team */
+  flex: 0 0 calc(25% - 20px);
   text-align: center;
   padding: 10px;
-  margin-bottom: 20px; /* Add margin between teams */
+  margin-bottom: 20px; 
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
