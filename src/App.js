@@ -9,25 +9,41 @@ function App() {
   const [namesList, setNamesList] = useState([]);
   const [showWarning, setShowWarning] = useState(false);
   const [teams, setTeams] = useState([]);
+  const [bulkUpload, setBulkUpload] = useState(false); 
 
   const handleNameChange = (e) => {
     setName(e.target.value);
   };
-
+  
+  const toggleBulkUpload = () => {
+    setBulkUpload(!bulkUpload);
+  };
+  
   const addNameToList = () => {
     if (name.trim() !== '') {
       if (namesList.length >= 40) {
         console.log("Maximum number of players reached!");
         return;
       }
-      const newPlayer = { id: namesList.length + 1, name: name.trim(), gamesPlayed: 0 };
-      setNamesList([...namesList, newPlayer]);
-      setName('');
-      if (namesList.length < 9) {
-        setShowWarning(true);
-      } else {
-        setShowWarning(false);
+  
+      let delimiter = ' ';
+      if (name.includes('\n')) {
+        delimiter = '\n';
+      } else if (name.includes(',')) {
+        delimiter = ',';
+      } else if (name.includes(' ')) {
+        delimiter = ' ';
       }
+  
+      const newPlayers = name.trim().split(delimiter).map((playerName, index) => ({
+        id: namesList.length + index + 1,
+        name: playerName.trim(),
+        gamesPlayed: 0
+      }));
+  
+      setNamesList([...namesList, ...newPlayers]);
+      setName('');
+      setShowWarning(namesList.length < 9);
     }
   };
 
