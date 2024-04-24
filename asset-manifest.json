@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/hoopers-app/static/css/main.77e24dce.css",
-    "main.js": "/hoopers-app/static/js/main.82e0a6d3.js",
+    "main.css": "/hoopers-app/static/css/main.f6acb79f.css",
+    "main.js": "/hoopers-app/static/js/main.ad548452.js",
     "static/js/453.05dc38cd.chunk.js": "/hoopers-app/static/js/453.05dc38cd.chunk.js",
+    "static/media/filamhoops_prev_ui.png": "/hoopers-app/static/media/filamhoops_prev_ui.4800975fd0fda0476f5d.png",
     "index.html": "/hoopers-app/index.html",
-    "main.77e24dce.css.map": "/hoopers-app/static/css/main.77e24dce.css.map",
-    "main.82e0a6d3.js.map": "/hoopers-app/static/js/main.82e0a6d3.js.map",
+    "main.f6acb79f.css.map": "/hoopers-app/static/css/main.f6acb79f.css.map",
+    "main.ad548452.js.map": "/hoopers-app/static/js/main.ad548452.js.map",
     "453.05dc38cd.chunk.js.map": "/hoopers-app/static/js/453.05dc38cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77e24dce.css",
-    "static/js/main.82e0a6d3.js"
+    "static/css/main.f6acb79f.css",
+    "static/js/main.ad548452.js"
   ]
 }
