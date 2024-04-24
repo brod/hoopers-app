@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { teamNames } from './data/team-names';
 import NameList from './components/name-list.component';
 import TeamsList from './components/team-list.component';
+import logoPlaceholder from './filamhoops_prev_ui.png'
 import './App.css';
 
 function App() {
@@ -9,15 +10,11 @@ function App() {
   const [namesList, setNamesList] = useState([]);
   const [showWarning, setShowWarning] = useState(false);
   const [teams, setTeams] = useState([]);
-  const [bulkUpload, setBulkUpload] = useState(false); 
 
   const handleNameChange = (e) => {
     setName(e.target.value);
   };
-  
-  const toggleBulkUpload = () => {
-    setBulkUpload(!bulkUpload);
-  };
+
   
   const addNameToList = () => {
     if (name.trim() !== '') {
@@ -190,7 +187,9 @@ function App() {
   
   return (
     <div className="container">
-      <h1>Lineup Generator</h1>
+      <div className="logo-container">
+        <img src={logoPlaceholder} alt="Logo Placeholder" className="logo-placeholder" />
+      </div>      
       <input
         type="text"
         value={name}

@@ -65,6 +65,11 @@ button:hover {
   padding: 5px 0;
 }
 
+.logo-placeholder {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  height: auto;
+}
+
 .teams {
   display: flex;
   flex-wrap: wrap; 
