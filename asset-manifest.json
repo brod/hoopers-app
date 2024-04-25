@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/hoopers-app/static/css/main.575e7c76.css",
+    "main.css": "/hoopers-app/static/css/main.f6acb79f.css",
     "main.js": "/hoopers-app/static/js/main.8b43a6b8.js",
     "static/js/453.05dc38cd.chunk.js": "/hoopers-app/static/js/453.05dc38cd.chunk.js",
     "static/media/filamhoops_prev_ui.png": "/hoopers-app/static/media/filamhoops_prev_ui.1c51bee7a429f30402ed.png",
     "index.html": "/hoopers-app/index.html",
-    "main.575e7c76.css.map": "/hoopers-app/static/css/main.575e7c76.css.map",
+    "main.f6acb79f.css.map": "/hoopers-app/static/css/main.f6acb79f.css.map",
     "main.8b43a6b8.js.map": "/hoopers-app/static/js/main.8b43a6b8.js.map",
     "453.05dc38cd.chunk.js.map": "/hoopers-app/static/js/453.05dc38cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.575e7c76.css",
+    "static/css/main.f6acb79f.css",
     "static/js/main.8b43a6b8.js"
   ]
 }
